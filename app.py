@@ -6,44 +6,37 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
+    mylist = []
     if request.method == 'POST':
         if request.form.get('action10') == '10 نفره':
-            mylist = ["کارآگاه", "دکتر", "نگهبان", "تفنگدار", "تکاور", "شهروند ساده", "شهروند ساده", "گادفادر", "ناتو", "گروگانگیر"]
-            random.shuffle(mylist)
-            encodedUnicode = json.dumps(mylist, ensure_ascii=False)
-            return encodedUnicode
+            mylist = ['کارآگاه', 'دکتر', 'نگهبان', 'تفنگدار', 'تکاور', 'شهروند ساده', 'شهروند ساده', 'گادفادر', 'ناتو', 'گروگانگیر']
+            numbers = ['1. ', '2. ', '3. ', '4. ', '5. ', '6. ', '7. ', '8. ', '9. ', '10. ']
         elif request.form.get('action11') == '11 نفره':
-            mylist = ["کارآگاه", "دکتر", "نگهبان", "تفنگدار", "تکاور", "شهروند ساده", "شهروند ساده", "گادفادر", "ناتو", "گروگانگیر", "شهروند ساده"]
-            random.shuffle(mylist)
-            encodedUnicode = json.dumps(mylist, ensure_ascii=False)
-            return encodedUnicode
+            mylist = ['کارآگاه', 'دکتر', 'نگهبان', 'تفنگدار', 'تکاور', 'شهروند ساده', 'شهروند ساده', 'گادفادر', 'ناتو', 'گروگانگیر', 'شهروند ساده']
+            numbers = ['1. ', '2. ', '3. ', '4. ', '5. ', '6. ', '7. ', '8. ', '9. ', '10. ', '11. ']
         elif request.form.get('action12') == '12 نفره':
-            mylist = ["کارآگاه", "دکتر", "نگهبان", "تفنگدار", "تکاور", "شهروند ساده", "شهروند ساده", "گادفادر", "ناتو", "گروگانگیر", "شهروند ساده", "مافیا ساده"]
-            random.shuffle(mylist)
-            encodedUnicode = json.dumps(mylist, ensure_ascii=False)
-            return encodedUnicode
+            mylist = ['کارآگاه', 'دکتر', 'نگهبان', 'تفنگدار', 'تکاور', 'شهروند ساده', 'شهروند ساده', 'گادفادر', 'ناتو', 'گروگانگیر', 'شهروند ساده', 'مافیا ساده']
+            numbers = ['1. ', '2. ', '3. ', '4. ', '5. ', '6. ', '7. ', '8. ', '9. ', '10. ', '11. ', '12. ']
         elif request.form.get('action13') == '13 نفره':
-            mylist = ["کارآگاه", "دکتر", "نگهبان", "تفنگدار", "تکاور", "شهروند ساده", "شهروند ساده", "گادفادر", "ناتو", "گروگانگیر", "شهروند ساده", "مافیا ساده", "شهروند ساده"]
-            random.shuffle(mylist)
-            encodedUnicode = json.dumps(mylist, ensure_ascii=False)
-            return encodedUnicode
+            mylist = ['کارآگاه', 'دکتر', 'نگهبان', 'تفنگدار', 'تکاور', 'شهروند ساده', 'شهروند ساده', 'گادفادر', 'ناتو', 'گروگانگیر', 'شهروند ساده', 'مافیا ساده', 'شهروند ساده']
+            numbers = ['1. ', '2. ', '3. ', '4. ', '5. ', '6. ', '7. ', '8. ', '9. ', '10. ', '11. ', '12. ', '13. ']
         elif request.form.get('action14') == '14 نفره':
-            mylist = ["کارآگاه", "دکتر", "نگهبان", "تفنگدار", "تکاور", "شهروند ساده", "شهروند ساده", "گادفادر", "ناتو", "گروگانگیر", "شهروند ساده", "مافیا ساده", "شهروند ساده", "مافیا ساده"]
-            random.shuffle(mylist)
-            encodedUnicode = json.dumps(mylist, ensure_ascii=False)
-            return encodedUnicode
+            mylist = ['کارآگاه', 'دکتر', 'نگهبان', 'تفنگدار', 'تکاور', 'شهروند ساده', 'شهروند ساده', 'گادفادر', 'ناتو', 'گروگانگیر', 'شهروند ساده', 'مافیا ساده', 'شهروند ساده', 'مافیا ساده']
+            numbers = ['1. ', '2. ', '3. ', '4. ', '5. ', '6. ', '7. ', '8. ', '9. ', '10. ', '11. ', '12. ', '13. ', '14. ']
         elif request.form.get('action15') == '15 نفره':
-            mylist = ["کارآگاه", "دکتر", "نگهبان", "تفنگدار", "تکاور", "شهروند ساده", "شهروند ساده", "گادفادر", "ناتو", "گروگانگیر", "شهروند ساده", "مافیا ساده", "شهروند ساده", "مافیا ساده", "شهروند ساده"]
-            random.shuffle(mylist)
-            encodedUnicode = json.dumps(mylist, ensure_ascii=False)
-            return encodedUnicode
+            mylist = ['کارآگاه', 'دکتر', 'نگهبان', 'تفنگدار', 'تکاور', 'شهروند ساده', 'شهروند ساده', 'گادفادر', 'ناتو', 'گروگانگیر', 'شهروند ساده', 'مافیا ساده', 'شهروند ساده', 'مافیا ساده', 'شهروند ساده']
+            numbers = ['1. ', '2. ', '3. ', '4. ', '5. ', '6. ', '7. ', '8. ', '9. ', '10. ', '11. ', '12. ', '13. ', '14. ', '15. ']
         else:
             mylist = []
     
     elif request.method == 'GET':
-        return render_template('index.html')
+        return render_template('index.html', roles=roles)
     
-    return render_template("index.html")
+    random.shuffle(mylist)
+    mylist = [n+m for m,n in zip(mylist, numbers)]
+    roles = json.dumps(mylist, ensure_ascii=False)
+    
+    return render_template('index.html', roles=roles)
     
 if __name__ == '__main__':
     app.run(threaded=True)
