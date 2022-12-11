@@ -7,8 +7,11 @@
 </head>
 
 <body>
-   <h1>نقش های مافیا</h1>
-   <div>تعداد بازیکن ها:
+   <h1>توزیع نقش های مافیا</h1>
+   <div>
+   <center>
+   <label>تعداد بازیکن ها:</label>
+   
 	<form method="POST" action="/">
 		<input type="submit" value="10 نفره" name="action10" />
 		<input type="submit" value="11 نفره" name="action11" />
@@ -16,9 +19,14 @@
 		<input type="submit" value="13 نفره" name="action13" />
 		<input type="submit" value="14 نفره" name="action14" />
 		<input type="submit" value="15 نفره" name="action15" />
+		<br>
+		<br>
+		<label>نقش ها:</label>
+		<br>
+		<output name="res">{{roles}}</output>
 	</form>
+   </center>
    </div>
-   
    <div class="show-data" >
    </div>
 </body>
