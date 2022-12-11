@@ -7,6 +7,7 @@ app = Flask(__name__)
 @app.route('/', methods=['GET', 'POST'])
 def index():
     mylist = []
+    roles = []
     if request.method == 'POST':
         if request.form.get('action10') == '10 نفره':
             mylist = ['کارآگاه', 'دکتر', 'نگهبان', 'تفنگدار', 'تکاور', 'شهروند ساده', 'شهروند ساده', 'گادفادر', 'ناتو', 'گروگانگیر']
