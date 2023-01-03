@@ -4,16 +4,25 @@
     <meta charset="utf-8">
 	<link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
 	<link rel="preload" href="/static/css/fonts/Vazir-Thin.woff2" as="font" type="font/woff2" crossOrigin="anonymous"/>
-    <title>نقش های مافیا</title>
+	<title>نقش های مافیا</title>
+	<link rel="icon" href="/mafia_img/logo.png">
+
 </head>
 
 <body>
    <h1>توزیع نقش های مافیا</h1>
    <div>
    <center>
-   <label>تعداد بازیکن ها:</label>
-   
 	<form method="POST" action="/">
+		<h2>.::انتخاب سناریو::.</h2>
+		<input type="radio" id="takavar" name="scenario" value="takavar">
+		<label for="takavar">تکاور</label>
+		<input type="radio" id="godfather" name="scenario" value="godfather">
+		<label for="godfather">پدر خوانده</label>
+		<br>
+		<br>
+		<label>تعداد بازیکن ها:</label>
+		<br>
 		<input type="submit" value="10 نفره" name="action10" />
 		<input type="submit" value="11 نفره" name="action11" />
 		<input type="submit" value="12 نفره" name="action12" />
@@ -25,6 +34,10 @@
 		<label>نقش ها:</label>
 		<br>
 		<output name="res">{{roles}}</output>
+		<br>
+		<label>کارت های حرکت آخر:</label>
+		<br>
+		<output name="res">{{cards}}</output>
 	</form>
    </center>
    </div>
